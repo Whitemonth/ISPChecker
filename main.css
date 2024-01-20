@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 10px;
+}
+
+.display {
+  border-radius: 10px;
+  display: flex;
+  width: 480px;
+  height: 480px;
+  background-color: rgb(114, 152, 185);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(39, 39, 39);
+  font-size: large;
+}
+
+.bd {
+  font-weight: bold;
+  font-size: x-large;
+}
