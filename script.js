@@ -1,6 +1,6 @@
 let firstResultIP = "Loading...";
 let secondResultIP = "Loading...";
-let result = "";
+let result = " ";
 
 const ipfiData = "https://api.ipify.org/?format=json";
 const myExternalIPData = "http://myexternalip.com/json";
@@ -12,8 +12,8 @@ function checkISP() {
     .then((data) => {
       firstResultIP = data.ip;
     })
-    .catch((error) => {
-      "Error: No data from ipify.org", error;
+    .catch((er) => {
+      "Error: No data from Ipify.org", er;
     });
 
   fetch(myExternalIPData)
@@ -21,8 +21,8 @@ function checkISP() {
     .then((data) => {
       secondResultIP = data.ip;
     })
-    .catch((error) => {
-      "Error: No data from Myexternalip.com", error;
+    .catch((er) => {
+      "Error: No data from Myexternalip.com", er;
     });
 
   // Diplay data in UI

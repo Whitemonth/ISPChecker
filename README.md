@@ -9,6 +9,8 @@ This application gets your external IP address with redundancy from two sources:
 
 Then displays the actual data in a basic user interface.
 
+In case of error, after 1 second data will be updated.
+
 Script refresh in 5 seconds.
 
 ---
