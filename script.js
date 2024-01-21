@@ -28,7 +28,8 @@ function checkISP() {
   // Diplay data in UI
   document.getElementById("RESULTIP").innerText = firstResultIP;
   document.getElementById("RESULTIPTHIRD").innerText = secondResultIP;
-  document.getElementById("DATE").innerText = new Date().toLocaleTimeString();
+  document.getElementById("TIME").innerText = new Date().toLocaleTimeString();
+  document.getElementById("DATE").innerText = new Date().toLocaleDateString();
 }
 checkISP(); // Calls function for first time.
 
